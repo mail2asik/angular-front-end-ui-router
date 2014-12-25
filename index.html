@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://getbootstrap.com/examples/justified-nav/# -->
+<html lang="en" ng-app="myApp"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Angular Simple Front-End Apps using ui.router</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+	
+	<script src="https://code.angularjs.org/1.3.2/angular.min.js"></script>
+	<script src="js/angular-ui-router.min.js"></script>
+	<script src="js/app.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+        <h3 class="text-muted">Angular Simple Front-End Apps using ui.router</h3>
+        <div role="navigation">
+          <ul class="nav nav-justified">
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="projects">Projects</a></li>
+            <li><a ui-sref="services">Services</a></li>
+            <li><a ui-sref="downloads">Downloads</a></li>
+            <li><a ui-sref="about">About</a></li>
+            <li><a ui-sref="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+	  <!-- Content Area -->
+	  <div ui-view></div>
+	  
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>© Amasik.com 2014</p>
+      </footer>
+
+    </div> <!-- /container -->
+	
+	<script type="text/ng-template" id="home.html">
+		 <div class="jumbotron">
+			<h1>Home Page</h1>
+			<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+			<p><a class="btn btn-lg btn-success" href="javascript:;" role="button">Get started today</a></p>
+		  </div>
+    </script>
+	
+	<script type="text/ng-template" id="projects.html">
+		 <div class="jumbotron">
+			<h1>Projects Page</h1>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+		  </div>
+    </script>
+	
+	<script type="text/ng-template" id="services.html">
+		 <div class="jumbotron">
+			<h1>Services Page</h1>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		  </div>
+    </script>
+	
+	<script type="text/ng-template" id="downloads.html">
+		 <div class="jumbotron">
+			<h1>Downloads Page</h1>
+			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+		  </div>
+    </script>
+	
+	<script type="text/ng-template" id="about.html">
+		 <div class="jumbotron">
+			<h1>About Page</h1>
+			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+		  </div>
+    </script>
+	
+	<script type="text/ng-template" id="contact.html">
+		 <div class="jumbotron">
+			<h1>Contact Page</h1>
+			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+		  </div>
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  
+
+</body></html>
